@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>25 советов Чехова: как жить счастливо</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            background-color: #faf7f2;
+            color: #2c2c2c;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Шапка */
+        .hero {
+            background: linear-gradient(135deg, #2e5f4b 0%, #1a3a2e 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 8px solid #d4af37;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 span {
+            font-style: italic;
+            font-weight: bold;
+            color: #f5e7a3;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .hero-image {
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-family: monospace;
+            letter-spacing: 5px;
+        }
+
+        /* Основной контент */
+        .intro {
+            background: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid #e0d6c8;
+        }
+
+        .intro h2 {
+            font-size: 1.8rem;
+            color: #2e5f4b;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .advice-grid {
+            padding: 50px 0;
+            background: #faf7f2;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #d4af37;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card-number {
+            display: inline-block;
+            background: #2e5f4b;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .card-quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card-source {
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 12px;
+            margin-top: 10px;
+        }
+
+        .card-source a {
+            color: #2e5f4b;
+            text-decoration: none;
+        }
+
+        .card-source a:hover {
+            text-decoration: underline;
+        }
+
+        /* Блок с основным письмом */
+        .letter {
+            background: #e8e0d0;
+            padding: 50px 0;
+        }
+
+        .letter-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fffef7;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #d4c5a5;
+        }
+
+        .letter-box h3 {
+            font-size: 1.8rem;
+            color: #2e5f4b;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .letter-text {
+            font-family: 'Courier New', monospace;
+            line-height: 1.8;
+            color: #2c2c2c;
+        }
+
+        .letter-text p {
+            margin-bottom: 15px;
+        }
+
+        .letter-text .quote {
+            font-style: italic;
+            padding-left: 20px;
+            border-left: 3px solid #d4af37;
+            margin: 20px 0;
+        }
+
+        /* Футер */
+        .footer {
+            background: #2c2c2c;
+            color: #aaa;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        .sources-list {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .letter-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-image">|   |   |</div>
+        <h1>25 советов от <span>Антона Павловича Чехова</span><br>о том, как жить счастливо</h1>
+        <p>«Последуй, человече, моему совету — и жизнь твоя будет состоять из сплошного ликования»</p>
+    </div>
+</section>
+
+<section class="intro">
+    <div class="container">
+        <h2>Счастье — это навык</h2>
+        <p>Врач по образованию, писатель с тончайшим чувством юмора, Антон Чехов знал, что жизнь часто кажется «пренеприятной штукой». 
+        Но он оставил нам рецепт. Не нужно выигрывать 200 000 или получать ордена. Нужно просто изменить угол зрения. 
+        Вот 25 мудрых и ироничных наблюдений, которые помогут вам «выдавливать из себя раба по капле» и радоваться каждому дню.</p>
+    </div>
+</section>
+
+<section class="advice-grid">
+    <div class="container">
+        <div class="grid">
+            
+            <!-- Советы 1-25 -->
+            <div class="card"><div class="card-number">1</div><div class="card-quote">«Умей довольствоваться настоящим. Счастье не в прошлом и не в будущем, оно здесь, в этой минуте».</div><div class="card-source">Из рассказа «Жизнь прекрасна!» </div></div>
+            
+            <div class="card"><div class="card-number">2</div><div class="card-quote">«Радуйся сознанию, что могло бы быть и хуже. Когда в кармане загораются спички — благодари небо, что там не пороховой погреб».</div><div class="card-source">«Жизнь прекрасна!» (Покушающимся на самоубийство) </div></div>
+            
+            <div class="card"><div class="card-number">3</div><div class="card-quote">«Если болит один зуб — ликуй, что болят не все зубы сразу».</div><div class="card-source">Там же </div></div>
+            
+            <div class="card"><div class="card-number">4</div><div class="card-quote">«Если жена изменила — радуйся, что она изменила тебе, а не отечеству».</div><div class="card-source">Там же </div></div>
+            
+            <div class="card"><div class="card-number">5</div><div class="card-quote">«Надо по капле выдавливать из себя раба, чтобы проснулся настоящий человек».</div><div class="card-source">Из письма А.С. Суворину (1889) </div></div>
+            
+            <div class="card"><div class="card-number">6</div><div class="card-quote">«Берегите в себе человека!»</div><div class="card-source">Рассказ «Ионыч» </div></div>
+            
+            <div class="card"><div class="card-number">7</div><div class="card-quote">«В человеке должно быть всё прекрасно: и лицо, и одежда, и душа, и мысли».</div><div class="card-source">Пьеса «Дядя Ваня» </div></div>
+            
+            <div class="card"><div class="card-number">8</div><div class="card-quote">«Ничто не стоит так дешево и не ценится так дорого, как вежливость».</div><div class="card-source">Записные книжки </div></div>
+            
+            <div class="card"><div class="card-number">9</div><div class="card-quote">«Не успокаивайтесь, не давайте усыплять себя! Пока молоды, сильны, бодры — не уставайте делать добро».</div><div class="card-source">Рассказ «Крыжовник» </div></div>
+            
+            <div class="card"><div class="card-number">10</div><div class="card-quote">«Богат не тот, у кого много денег, а тот, кто имеет средства жить в роскошной обстановке, какую дает ранняя весна».</div><div class="card-source">Из письма </div></div>
+            
+            <div class="card"><div class="card-number">11</div><div class="card-quote">«Краткость — сестра таланта».</div><div class="card-source">Из письма брату Александру (1889) </div></div>
+            
+            <div class="card"><div class="card-number">12</div><div class="card-quote">«Если вы будете работать для настоящего — ваша работа выйдет ничтожной; работайте, имея в виду только будущее».</div><div class="card-source">Записные книжки </div></div>
+            
+            <div class="card"><div class="card-number">13</div><div class="card-quote">«За дверью счастливого человека должен стоять кто-то с молоточком, стучать и напоминать, что есть несчастные».</div><div class="card-source">Рассказ «Крыжовник» </div></div>
+            
+            <div class="card"><div class="card-number">14</div><div class="card-quote">«Воспитанные люди уважают человеческую личность, а потому всегда снисходительны, мягки, вежливы, уступчивы».</div><div class="card-source">Из письма брату Николаю (1886) </div></div>
+            
+            <div class="card"><div class="card-number">15</div><div class="card-quote">«Покой и довольство человека не вне его, а в нём самом».</div><div class="card-source">Повесть «Палата № 6» </div></div>
+            
+            <div class="card"><div class="card-number">16</div><div class="card-quote">«Обойти то мелкое и призрачное, что мешает быть свободным и счастливым — вот цель и смысл нашей жизни».</div><div class="card-source">Пьеса «Вишнёвый сад» </div></div>
+            
+            <div class="card"><div class="card-number">17</div><div class="card-quote">«Тля ест траву, ржа — железо, а лжа — душу».</div><div class="card-source">Рассказ «Моя жизнь» </div></div>
+            
+            <div class="card"><div class="card-number">18</div><div class="card-quote">«Влюбленность указывает человеку, каким он должен быть».</div><div class="card-source">Записные книжки </div></div>
+            
+            <div class="card"><div class="card-number">19</div><div class="card-quote">«Равнодушие — это паралич души, преждевременная смерть».</div><div class="card-source">Рассказ «Скучная история» </div></div>
+            
+            <div class="card"><div class="card-number">20</div><div class="card-quote">«Умный любит учиться, а дурак — учить».</div><div class="card-source">Записные книжки </div></div>
+            
+            <div class="card"><div class="card-number">21</div><div class="card-quote">«Когда нет настоящей жизни, то живут миражами. Всё-таки лучше, чем ничего».</div><div class="card-source">Пьеса «Дядя Ваня» </div></div>
+            
+            <div class="card"><div class="card-number">22</div><div class="card-quote">«Если тебя секут березой — дрыгай ногами и восклицай: "Как я счастлив, что меня секут не крапивой!"».</div><div class="card-source">«Жизнь прекрасна!» </div></div>
+            
+            <div class="card"><div class="card-number">23</div><div class="card-quote">«Хорошее воспитание не в том, что ты не прольешь соуса на скатерть, а в том, что ты не заметишь, как это сделает другой».</div><div class="card-source">Рассказ «Дом с мезонином» </div></div>
+            
+            <div class="card"><div class="card-number">24</div><div class="card-quote">«Даже болеть приятно, когда знаешь, что есть люди, которые ждут твоего выздоровления как праздника».</div><div class="card-source">Записные книжки </div></div>
+            
+            <div class="card"><div class="card-number">25</div><div class="card-quote">«Жизнь, по сути, очень простая штука, и человеку нужно приложить много усилий, чтобы её испортить».</div><div class="card-source">Обобщение философии писателя </div></div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="letter">
+    <div class="container">
+        <div class="letter-box">
+            <h3>Главный рецепт счастья от Чехова</h3>
+            <div class="letter-text">
+                <p><strong>«Жизнь — пренеприятная штука, но сделать её прекрасной очень нетрудно...</strong></p>
+                <p>Для того, чтобы ощущать в себе счастье без перерыва, даже в минуты скорби и печали, нужно:</p>
+                <p>а) уметь довольствоваться настоящим и<br>
+                б) радоваться сознанию, что «могло бы быть и хуже».</p>
+                <div class="quote">
+                    «Когда у тебя в кармане загораются спички — радуйся и благодари небо, что у тебя в кармане не пороховой погреб.<br>
+                    ...Если жена тебе изменила — радуйся, что она изменила тебе, а не отечеству.<br>
+                    <strong>Последуй, человече, моему совету — и жизнь твоя будет состоять из сплошного ликования».</strong>
+                </div>
+                <p style="text-align: right; margin-top: 20px;"><em>— Антон Павлович Чехов, рассказ «Жизнь прекрасна!» (1885)</em></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>Проект «25 советов от Чехова» — инструкция по бережному отношению к жизни.</p>
+        <p>«Человек — это то, во что он верит» (А.П. Чехов).</p>
+        
+        <div class="sources-list">
+            <p style="text-align: center; margin-bottom: 15px;"><strong>Источники цитирования:</strong></p>
+            <ul style="list-style: none; text-align: center;">
+                <li>• Рассказ А.П. Чехова «Жизнь прекрасна!» (Покушающимся на самоубийство) — Викитека / Русская литература</li>
+                <li>• Полное собрание сочинений и писем в 30 томах. Том 3. «Наука», 1975</li>
+                <li>• Письма Антона Чехова братьям и А.С. Суворину (1886-1899)</li>
+                <li>• Пьесы «Дядя Ваня», «Вишнёвый сад», рассказ «Ионыч», «Крыжовник», «Палата №6»</li>
+                <li>• Записные книжки Чехова. Афоризмы</li>
+            </ul>
+            <p style="margin-top: 20px; font-size: 0.7rem;">*Все цитаты приведены в литературной обработке с сохранением смысла и стиля эпохи.</p>
+        </div>
+        <p style="margin-top: 30px;">© 2026 Лендинг о простых истинах сложного писателя</p>
+    </div>
+</footer>
+
+</body>
+</html>
