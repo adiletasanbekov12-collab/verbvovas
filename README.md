@@ -1,2 +1,0 @@
-# verbvovas
-verbovsiteaa
