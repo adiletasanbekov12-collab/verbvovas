@@ -1,0 +1,148 @@
+```html
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АФАНАСЬЕВ.NET — Компьютеры для различных областей применения</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/index.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-white selection:text-black">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-lg font-semibold tracking-tight">АФАНАСЬЕВ.NET</div>
+            <div class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
+                <a href="#hero" class="hover:text-white transition-colors">Главная</a>
+                <a href="#categories" class="hover:text-white transition-colors">Применение</a>
+                <a href="#specs" class="hover:text-white transition-colors">Характеристики</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-zinc-400 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-4 text-sm text-zinc-400 border-t border-white/5 pt-4">
+            <a href="#hero" class="hover:text-white">Главная</a>
+            <a href="#categories" class="hover:text-white">Применение</a>
+            <a href="#specs" class="hover:text-white">Характеристики</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-h-screen flex items-center pt-16">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="reveal space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 text-xs text-zinc-400">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                    Индивидуальный проект
+                </div>
+                <h1 class="text-5xl md:text-6xl font-medium tracking-tight leading-[1.1]">
+                    Компьютеры для<br>
+                    <span class="text-zinc-500">различных задач</span>
+                </h1>
+                <p class="text-lg text-zinc-400 max-w-md leading-relaxed">
+                    Подбор оптимальных конфигураций для гейминга, работы, творчества и научных исследований. Минимализм в дизайне, максимум в производительности.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#categories" class="px-6 py-3 rounded-lg bg-white text-black font-medium hover:bg-zinc-200 transition-colors">
+                        Смотреть решения
+                    </a>
+                    <a href="#specs" class="px-6 py-3 rounded-lg border border-white/10 text-zinc-300 hover:bg-white/5 transition-colors">
+                        Характеристики
+                    </a>
+                </div>
+            </div>
+            <div class="reveal flex justify-center md:justify-end">
+                <svg class="w-full max-w-sm h-auto text-zinc-800" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="50" y="40" width="300" height="200" rx="8" stroke="currentColor" stroke-width="1"/>
+                    <rect x="70" y="60" width="260" height="140" rx="4" fill="rgba(255,255,255,0.03)" stroke="currentColor" stroke-width="1"/>
+                    <circle cx="200" cy="130" r="40" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+                    <path d="M180 130 L200 150 L220 110" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="150" y="260" width="100" height="8" rx="4" fill="rgba(255,255,255,0.05)" stroke="currentColor" stroke-width="1"/>
+                    <rect x="120" y="268" width="160" height="4" rx="2" fill="rgba(255,255,255,0.03)"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="py-24">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="reveal mb-16">
+                <h2 class="text-3xl font-medium tracking-tight mb-4">Области применения</h2>
+                <p class="text-zinc-400 max-w-2xl">Каждая сфера требует специфического подхода к аппаратному обеспечению.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="reveal card rounded-xl p-6 cursor-pointer" onclick="switchTab('gaming')">
+                    <div class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center mb-6">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Гейминг</h3>
+                    <p class="text-sm text-zinc-500 leading-relaxed">Высокий FPS, трассировка лучей и максимальная детализация в AAA-проектах.</p>
+                </div>
+
+                <div class="reveal card rounded-xl p-6 cursor-pointer" style="transition-delay: 0.1s" onclick="switchTab('work')">
+                    <div class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center mb-6">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Работа и офис</h3>
+                    <p class="text-sm text-zinc-500 leading-relaxed">Надёжность, тишина и эффективная многозадачность для корпоративных задач.</p>
+                </div>
+
+                <div class="reveal card rounded-xl p-6 cursor-pointer" style="transition-delay: 0.2s" onclick="switchTab('creative')">
+                    <div class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center mb-6">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Дизайн</h3>
+                    <p class="text-sm text-zinc-500 leading-relaxed">Точная цветопередача, быстрый рендеринг и работа с 4K/8K видеоконтентом.</p>
+                </div>
+
+                <div class="reveal card rounded-xl p-6 cursor-pointer" style="transition-delay: 0.3s" onclick="switchTab('science')">
+                    <div class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center mb-6">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Наука</h3>
+                    <p class="text-sm text-zinc-500 leading-relaxed">Обработка больших данных, машинное обучение и сложные математические расчёты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="py-24 border-t border-white/5">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="reveal text-center mb-12">
+                <h2 class="text-3xl font-medium tracking-tight mb-4">Сравнение характеристик</h2>
+                <p class="text-zinc-400">Рекомендуемые параметры для каждой категории задач</p>
+            </div>
+
+            <div class="reveal flex flex-wrap justify-center gap-2 mb-12">
+                <button class="tab-btn active px-5 py-2.5 rounded-lg text-sm font-medium" data-tab="gaming" onclick="switchTab('gaming')">Гейминг</button>
+                <button class="tab-btn px-5 py-2.5 rounded-lg text-sm font-medium" data-tab="work" onclick="switchTab('work')">Работа</button>
+                <button class="tab-btn px-5 py-2.5 rounded-lg text-sm font-medium" data-tab="creative" onclick="switchTab('creative')">Дизайн</button>
+                <button class="tab-btn px-5 py-2.5 rounded-lg text-sm font-medium" data-tab="science" onclick="switchTab('science')">Наука</button>
+            </div>
+
+            <div class="reveal card rounded-2xl p-8 md:p-10" id="specContent">
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/5 py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-sm text-zinc-500">
+                © 2026 АФАНАСЬЕВ.NET
+            </div>
+            <div class="text-sm text-zinc-500 text-center md:text-right">
+                Индивидуальный проект для колледжа<br>
+                <span class="text-xs text-zinc-600">Разработано с вниманием к деталям</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
